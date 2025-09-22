@@ -54,10 +54,9 @@ nmap -sV -O 192.168.56.104 -oN nmap_scan_results.txt
 
 ## Files included in this repo
 - `nmap_scan_results.txt` — full Nmap output + interpretation.  
-- `screenshots/` — (add screenshots of your terminal & browser listing).  
-- `scans/` — (optional: multiple Nmap output formats if used).  
-- `report.md` — (optional short report).  
-- `demo.mp4` — (optional short demonstration video).
+- `screenshots/` 
+- `report.md`
+
 
 ## Ethical statement
 All scans were performed on a lab VM owned by me. Do not scan or probe systems for which you do not have explicit authorization.
