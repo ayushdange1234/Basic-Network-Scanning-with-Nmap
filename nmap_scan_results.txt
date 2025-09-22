@@ -1,0 +1,31 @@
+# nmap_scan_results.txt
+# Run: nmap -sV -O 192.168.56.104 -oN nmap_scan_results.txt
+# Date: 2025-09-12 04:17 EDT
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-12 04:17 EDT
+
+Nmap scan report for 192.168.56.104
+Host is up (0.000068s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.65
+
+Device type: general purpose
+Running: Linux 2.6.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:6
+OS details: Linux 2.6.32, Linux 5.0 - 6.2
+Network Distance: 0 hops
+Service Info: Host: 127.0.1.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.95 seconds
+
+--- Additional scan outputs ---
+(Summarized from other commands)
+- Ping scan (`-sn`): Host responded and is alive.
+- Full port scan (`-p-`): Only port 80 open, all others closed.
+- Version scan (`-sV`): Apache httpd 2.4.65 detected.
+- Aggressive scan (`-A`): Directory listing visible, with `.exe` and `.apk` files exposed.
+- Common ports (22, 80, 443, 3306): Only 80 open.
+
+--- Summary ---
+The web server at 192.168.56.104 exposes a directory listing on port 80. Suspicious files are publicly accessible. All other tested ports are closed.
